@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication</title>
+</head>
+<h1>Practice 4</h1>
+<body>
+    <form action="" method="post">
+        Enter A Number For A Multiplication Table:
+        <input type="number" name="num">
+        <input type="submit" value="Present Table!">
+    </form>
+    <?php
+        $num = $_POST["num"];
+        echo "<table border='1'>";
+        echo "<tr><td></td>";
+        for ($x = 1; $x <= $num; $x++){
+            echo "<td>" . $x . "</td>";
+        }
+        echo "</tr>";
+        for ($x = 1; $x <= $num; $x++){
+            echo "<tr>";
+            echo "<td>" . $x . "</td>";
+            for ($y = 1; $y <= $num; $y++){
+                echo "<td>" . $x * $y . "</td>";
+            }
+            echo "</tr>";    
+        }
+        echo "</table>";
+    ?>
+</body>
+</html>

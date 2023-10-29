@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter Password</title>
+</head>
+<h1>Practice 3</h1>
+<body>
+    <div>
+        <p>Enter A Password Two Times!</p>
+        <label for="text1">Type Password:</label>
+        <input type="text" id="text1">
+        <br>
+        <label for="text2">Retype Password:</label>
+        <input type="text" id="text2">
+        <br>
+        <button onclick="check()">Submit</button>
+    </div>
+    <script>
+        function check(){
+            var text1 = document.getElementById("text1").value;
+            var text2 = document.getElementById("text2").value;
+            if (text1.length >= 8 && text2.length >= 8){ 
+                if(text1 === text2){
+                    alert("Correct!");
+                }else{
+                    alert("Wrong! Try Again!");
+                }
+            }else{
+                alert("Password Cannot Be less than 8 characters!");
+            }
+        }
+    </script>
+</body>
+</html>

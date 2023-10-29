@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(61, 191, 196);
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 61%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.profile-photo {
+    width: 100px;
+    border-radius: 50%;
+    margin: 20px 0;
+}

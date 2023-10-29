@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try to Change the Color</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<h1>Practice 2</h1>
+<body>
+<div class="container">
+    <p id="textElement">Try to change the style of me by your request! For text color and border color, the input should be like: _,_,_. Border width just needs one number.</p>
+    
+    <label for="textc">Text Color:</label>
+    <input type="text" id="textc">
+
+    <label for="borderc">Border Color:</label>
+    <input type="text" id="borderc">
+
+    <label for="borderw">Border Width:</label>
+    <input type="text" id="borderw" >
+
+    <button onclick="change()">Click to Change</button>
+</div>
+    <script>
+        function change() {
+            var textElement = document.getElementById("textElement");
+            
+            var textcolor = document.getElementById("textc").value;
+            textElement.style.color = `rgb(${textcolor})`;
+        
+            var bordercolor = document.getElementById("borderc").value;
+            textElement.style.borderColor = `rgb(${bordercolor})`;
+            textElement.style.borderStyle = "solid";
+
+            var borderwidth = document.getElementById("borderw").value;
+            textElement.style.borderWidth = `${borderwidth}px`;
+        }
+    </script>
+</body>
+</html>
